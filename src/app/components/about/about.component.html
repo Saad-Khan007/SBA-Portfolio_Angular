@@ -1,0 +1,107 @@
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="../../../assets/Logos//Lion Face.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a Learning front-end web development with a strong foundation in HTML, CSS, and JavaScript.
+                    I've honed my skills in building responsive and user-friendly websites that are visually
+                    appealing and easy to navigate.<br>
+                    My goal as a front-end web developer is to create beautiful and intuitive user interfaces that
+                    enhance the user experience and drive engagement. I enjoy collaborating with other developers
+                    and designers to bring a project to life, and thrive in a fast-paced, creative environment.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links" [class.active-link]="activeTab === 0 " (click)="tab(0)">Skills</p>
+                    <p class="tab-links" [class.active-link]="activeTab === 1 " (click)="tab(1)">Experience</p>
+                    <p class="tab-links" [class.active-link]="activeTab === 2 " (click)="tab(2)">Eudcation</p>
+                </div>
+                <div class="tab-contents" *ngIf="tabMenu[0]">
+
+                    <div class="skills">
+
+                        <div class="skill">
+                            <div class="skill-box-1">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-box-2">
+                                <div class="skill-animated-line"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-box-1">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-box-2">
+                                <div class="skill-animated-line"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-box-1">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-box-2">
+                                <div class="skill-animated-line"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-box-1">
+                                <span class="skill-name">Angular</span>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="skill-box-2">
+                                <div class="skill-animated-line"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-box-1">
+                                <span class="skill-name">Ms Office</span>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="skill-box-2">
+                                <div class="skill-animated-line"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-box-1">
+                                <span class="skill-name">Photoshop</span>
+                                <span class="skill-percentage">40%</span>
+                            </div>
+                            <div class="skill-box-2">
+                                <div class="skill-animated-line"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-contents" *ngIf="tabMenu[1]">
+                    <ul>
+                        <li><span>2022 - Current</span>
+                            <ul class="expLi">
+                                <li>Self-taught web developer with practical experience in HTML, CSS, and
+                                    JavaScript.</li>
+                                <li>Developed responsive web designs and optimized websites for search engines,
+                                    using front-end frameworks such as Bootstrap and Materialize to enhance skills.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" *ngIf="tabMenu[2]">
+                    <ul>
+                        <li><span>2021 - Current</span><br>ADP-CS at Superior College Wapda Town</li>
+                        <li><span>2019 - 2021</span><br>Intermediate from Government College Township</li>
+                        <li><span>2017 - 2019</span><br>Matriculation from Lahore Garrison School</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,147 @@
+/* ----------------Mobile Screen---------------- */
+nav .fa {
+    display: none;
+}
+
+@media only screen and (max-width:900px) {
+
+    nav .fa {
+        display: block;
+        font-size: 4vh;
+        cursor: pointer;
+    }
+
+    nav ul {
+        background: var(--main);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        padding-top: 50px;
+        z-index: 2;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block !important;
+        margin: 25px;
+    }
+
+    nav ul li a {
+        font-size: 2vw !important;
+    }
+
+    nav ul li a::after {
+        background: var(--font) !important;
+    }
+
+    nav ul .fa {
+        position: absolute;
+        top: 25px;
+        left: 90px;
+        cursor: pointer;
+    }
+
+    header {
+        height: fit-content !important;
+    }
+
+    .home-con {
+        flex-direction: column-reverse;
+    }
+
+    .header-text {
+        width: 100%;
+    }
+
+    .img-port img {
+        width: 70% !important;
+    }
+
+    .header-text h1 {
+        font-size: 9vw !important;
+    }
+
+    .header-text h3 {
+        font-size: 4vw !important;
+    }
+
+    .header-text p {
+        font-size: 3vw !important;
+    }
+
+    .social-icons1 a {
+        width: 6vw !important;
+        height: 6vw !important;
+        font-size: 3vw !important;
+    }
+
+    .btn3 {
+        padding: 2vw 4vw !important;
+        font-size: 3vw !important;
+    }
+
+    #about .row {
+        display: block;
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        display: none;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .about-col-2 p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .tab-links {
+        margin-right: auto !important;
+    }
+
+    .services-list div {
+        padding: 20px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100% !important;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    .btn3 {
+        padding: 2vw 4vw !important;
+        font-size: 3vw !important;
+    }
+    .btn {
+        padding: 2vw 4vw !important;
+        font-size: 3vw !important;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    nav ul li a {
+        font-size: 3vw !important;
+    }
+}

@@ -1,0 +1,131 @@
+/*----------------Head Section----------------*/
+header {
+    width: 100%;
+}
+
+.home-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-text {
+    position: relative;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.header-text h3 {
+    font-size: 2vw;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.header-text h3:nth-child(1) {
+    animation: slideBottom 1s ease forwards;
+}
+
+.header-text h1 {
+    font-size: 3.5vw;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.header-text p {
+    font-size: 1.2vw;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.header-text h3 span {
+    color: var(--main);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.img-port {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    animation: zoom 1s ease forwards, float 4s ease-in-out infinite;
+    opacity: 0;
+    animation-delay: 2s, 3s;
+}
+
+.img-port img {
+    width: 100%;
+}
+
+.social-icons1{ 
+    margin: 10px 0;
+}
+.social-icons1 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid var(--main);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main);
+    text-decoration: none;
+    margin: 1vw 1vw 1vw 0;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s* var(--i));
+}
+
+.social-icons1 a:hover {
+    color: black;
+    background: var(--main);
+    box-shadow: 0 0 20px var(--main);
+}
+
+@media only screen and (max-width:900px) {
+    header {
+        height: fit-content !important;
+    }
+
+    .home-con {
+        flex-direction: column-reverse;
+    }
+
+    .header-text {
+        width: 100%;
+    }
+
+    .img-port img {
+        width: 300px !important;
+    }
+
+    .header-text h1 {
+        font-size: 9vw !important;
+    }
+
+    .header-text h3 {
+        font-size: 4vw !important;
+    }
+
+    .header-text p {
+        font-size: 3vw !important;
+    }
+
+    .social-icons1 a {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 15px !important;
+    }   
+}

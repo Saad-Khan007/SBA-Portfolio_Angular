@@ -1,0 +1,13 @@
+<div>
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div *ngFor="let service of services">
+                <i class='{{service.class}}'></i>
+                <h2>{{service.title}}</h2>
+                <p>{{service.body}}</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>

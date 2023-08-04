@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('./animation.css');
+@import url('./mobile.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    transition: all .3s;
+}
+
+:root {
+    --main: #00abf0;
+    --bg: #081b29;
+    --font: #fff;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--bg);
+    width: 1px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main);
+    border-radius: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--font);
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+button:disabled {
+    opacity: 0;
+}
+
+.btn3 {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--main);
+    background: transparent;
+    color: var(--font);
+    border-radius: 10px;
+    font-size: 1vw;
+    letter-spacing: 1px;
+    text-decoration: none;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.btn3:hover {
+    background: var(--main);
+    box-shadow: 0 0 1vw var(--main);
+}

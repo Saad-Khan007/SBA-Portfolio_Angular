@@ -1,0 +1,12 @@
+<nav id="nav">
+    <img src="../../../assets/Logos/sba_Blue.png" class="logo">
+    <ul [class.sideMenu]="sideMenu">
+        <li style="--i:1"><a routerLinkActive="active-link" routerLink="home">Home</a></li>
+        <li style="--i:2"><a routerLinkActive="active-link" routerLink="about">About</a></li>
+        <li style="--i:3"><a routerLinkActive="active-link" routerLink="services">Services</a></li>
+        <li style="--i:4"><a routerLinkActive="active-link" routerLink="portfolio">Portfolio</a></li>
+        <li style="--i:5"><a routerLinkActive="active-link" routerLink="contact">Contact</a></li>
+        <i class="fa fa-regular fa-circle-xmark" (click)="menu()"></i>
+    </ul>
+    <i class="fa fa-solid fa-bars" (click)="menu()"></i>
+</nav>
