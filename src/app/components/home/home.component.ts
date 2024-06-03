@@ -8,7 +8,7 @@ import Typed from 'typed.js';
 export class HomeComponent {
   ngAfterViewInit() {
     const typed = new Typed('.multiple-text', {
-      strings: ["Jr. Software Engineer","Frontend Developer", "Graphic Designer", ],
+      strings: ["Software Engineer", "Fullstack Developer", "Graphic Designer", "Front-end Developer", "Backend Developer"],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 100,

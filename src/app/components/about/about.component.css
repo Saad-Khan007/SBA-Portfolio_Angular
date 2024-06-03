@@ -110,59 +110,18 @@ ul.expLi li::before {
     position: relative;
 }
 
-.skill-animated-line {
-    position: absolute;
+.skill-animated-line div {
     background-color: var(--main);
     height: 5px;
     width: 0%;
-    top: 0;
-}
-.skill:nth-child(1) .skill-animated-line{
-    animation: skillAnimation1 1s linear forwards;
-}
-.skill:nth-child(2) .skill-animated-line{
-    animation: skillAnimation2 1s linear forwards;
-}
-.skill:nth-child(3) .skill-animated-line{
-    animation: skillAnimation3 1s linear forwards;
-}
-.skill:nth-child(4) .skill-animated-line{
-    animation: skillAnimation4 1s linear forwards;
-}
-.skill:nth-child(5) .skill-animated-line{
-    animation: skillAnimation5 1s linear forwards;
-}
-.skill:nth-child(6) .skill-animated-line{
-    animation: skillAnimation6 1s linear forwards;
-}
-@keyframes skillAnimation1 {
-    100%{
-        width: 90%;
-    }
-}
-@keyframes skillAnimation2 {
-    100%{
-        width: 80%;
-    }
-}
-@keyframes skillAnimation3 {
-    100%{
-        width: 70%;
-    }
-}
-@keyframes skillAnimation4 {
-    100%{
-        width: 60%;
-    }
-}
-@keyframes skillAnimation5 {
-    100%{
-        width: 50%;
-    }
-}
-@keyframes skillAnimation6 {
-    100%{
-        width: 40%;
-    }
 }
 
+.skill-animated-line div {
+    animation: skillAnimation 1s linear forwards;
+}
+
+@keyframes skillAnimation {
+    100% {
+        width: 100%;
+    }
+}

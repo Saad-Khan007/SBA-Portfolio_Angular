@@ -41,6 +41,12 @@ body {
     padding: 10px 10%;
 }
 
+.container2 {
+    padding: 10px 10%;
+    min-height: calc(100vh - 160px);
+    display: flex;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
