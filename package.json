@@ -4,13 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run SBA-Portfolio:serve-ssr",
     "serve:ssr": "node dist/SBA-Portfolio/server/main.js",
-    "build:ssr": "ng build && ng run SBA-Portfolio:server",
-    "prerender": "ng run SBA-Portfolio:prerender"
+    "build": "ng build --configuration=production && ng run SBA-Portfolio:server"
   },
   "private": true,
   "dependencies": {
