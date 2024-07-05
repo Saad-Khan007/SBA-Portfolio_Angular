@@ -1,19 +1,22 @@
 <!----------------Portfolio Section---------------->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">My Work <br>
+            <span>Discover My Diverse Portfolio of Projects and Contributions</span>
+        </h1>
         <div class="work-list">
-            
             <div class="{{portfolioTile.class}}" *ngFor="let portfolioTile of portfolioTiles">
-                <img src="{{portfolioTile.image}}">
+                <img src="{{portfolioTile.image}}" width="auto" height="auto" loading="eager"
+                    [alt]="portfolioTile.title" [title]="portfolioTile.title">
                 <div class="layer">
                     <h3>{{portfolioTile.title}}</h3>
                     <p>{{portfolioTile.body}}</p>
-                    <a href="{{portfolioTile.link}}" target="_blank"><i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="{{portfolioTile.link}}" target="_blank">
+                        <span>portfolioTile.title</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
-           
         </div>
     </div>
 </div>

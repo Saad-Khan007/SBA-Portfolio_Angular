@@ -1,4 +1,13 @@
 /* ----------------Contact Section---------------- */
+.contact-container {
+    min-height: calc(100vh - 170px);
+    display: flex;
+    align-items: center;
+}
+
+.contact-container .row {
+    width: 100%;
+}
 
 .contact-left {
     flex-basis: 35%;
@@ -32,6 +41,9 @@
     color: #ababab;
     display: inline-block;
     transition: all .5s;
+}
+.social-icons a span {
+    font-size: 0;
 }
 
 .social-icons a:hover {
@@ -96,4 +108,16 @@ form textarea {
 .error {
     color: var(--main);
     font-size: 14px;
+}
+
+.sub-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--font);
+    line-height: 25px;
+    margin: 20px 0 0 0;
+}
+
+.sub-title span {
+    font-size: 12px;
 }

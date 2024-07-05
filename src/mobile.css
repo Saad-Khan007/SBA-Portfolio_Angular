@@ -90,20 +90,11 @@ nav .fa {
         font-size: 40px;
     }
 
-    .about-col-1,
-    .about-col-2 {
-        flex-basis: 100%;
-    }
-
-    .about-col-1 {
-        display: none;
-    }
-
-    .about-col-2 {
+    .about-col {
         font-size: 14px;
     }
 
-    .about-col-2 p {
+    .about-col p {
         width: 100%;
         text-align: justify;
     }

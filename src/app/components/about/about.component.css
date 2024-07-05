@@ -1,56 +1,29 @@
 /*----------------About Section----------------*/
 #about {
     color: #ababab;
+    min-height: calc(100vh - 170px);
 }
 
-.about-col-1 {
-    flex-basis: 35%;
-}
 
-.about-col-1 img {
-    width: 100%;
-}
-
-.about-col-2 {
-    flex-basis: 60%;
+.about-col {
+    flex-basis: 100%;
 }
 
 .sub-title {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     color: var(--font);
+    line-height: 35px;
+    margin: 30px 0;
+}
+
+.sub-title span {
+    font-size: 15px;
 }
 
 .tab-titles {
     display: flex;
     margin: 20px 0 40px;
-}
-
-.tab-links {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: var(--main);
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: all .3s;
-}
-
-.tab-links:hover::after {
-    width: 100%;
-}
-
-.tab-links.active-link::after {
-    width: 50%;
 }
 
 .tab-contents {
@@ -92,9 +65,8 @@ ul.expLi li::before {
 
 .skills {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .skill-box-1 {
@@ -123,6 +95,22 @@ ul.expLi li::before {
 
 .skill-animated-line div {
     animation: skillAnimation 1s linear forwards;
+}
+
+.experience .title,
+.experience .date {
+    color: var(--main);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 600;
+    background-color: var(--main);
+    color: var(--font);
+    text-align: center;
+    margin: 20px 0;
 }
 
 @keyframes skillAnimation {

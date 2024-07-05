@@ -20,7 +20,8 @@ header {
     align-items: flex-start;
 }
 
-.header-text h3 {
+.header-text h3,
+.header-text h1 span {
     font-size: 2vw;
     font-weight: 700;
     opacity: 0;
@@ -67,9 +68,14 @@ header {
     width: 80%;
 }
 
-.social-icons1{ 
+.social-icons1 {
     margin: 10px 0;
 }
+
+.social-icons1 a span {
+    font-size: 0;
+}
+
 .social-icons1 a {
     display: inline-flex;
     justify-content: center;
@@ -127,5 +133,5 @@ header {
         width: 30px !important;
         height: 30px !important;
         font-size: 15px !important;
-    }   
+    }
 }
