@@ -55,11 +55,15 @@ body {
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 10px 3.2rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .container2 {
-    padding: 10px 10%;
+    padding: 10px 3.2rem;
+    max-width: 1200px;
+    margin: auto;
     min-height: calc(100vh - 170px);
     display: flex;
 }
