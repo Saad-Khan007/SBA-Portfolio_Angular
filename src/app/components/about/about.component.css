@@ -64,6 +64,11 @@
     margin: 10px 0;
 }
 
+.tab-contents ul li strong {
+    color: #fff;
+    font-weight: 600;
+}
+
 .tab-contents ul li span {
     color: var(--main);
     font-size: 14px;

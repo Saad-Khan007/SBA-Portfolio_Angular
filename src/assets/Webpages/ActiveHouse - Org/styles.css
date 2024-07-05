@@ -472,7 +472,7 @@
   
   .about_us_div_2 {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 50%;
   }
