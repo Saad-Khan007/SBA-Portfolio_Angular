@@ -98,3 +98,24 @@ button:disabled {
     background: var(--main);
     box-shadow: 0 0 1vw var(--main);
 }
+
+.chaport-launcher-button.no-photo.chaport-launcher-anim.chaport-anim-show {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.chaport-container .chaport-launcher .chaport-launcher-button .chaport-launcher-chat-icon {
+    top: 12px !important;
+    right: 0 !important;
+    height: 25px !important;
+    width: 25px !important;
+    left: 12px !important;
+}
+
+.chaport-container.chaport-expanded .chaport-launcher .chaport-launcher-button .chaport-launcher-close-icon {
+    top: -4px !important;
+    right: 0 !important;
+    height: 25px !important;
+    width: 25px !important;
+    left: 30px !important;
+}
